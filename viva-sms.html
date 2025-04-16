@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    const source = "sms";
+    const baseUrl = "https://www.vivapaydayloans.com/?aff91321";
+
+    // Generate a unique click ID
+    function generateClickID() {
+      const timestamp = Date.now();
+      const random = Math.floor(Math.random() * 100000);
+      return `${source}_${timestamp}_${random}`;
+    }
+
+    window.onload = function () {
+      const clickID = generateClickID();
+      const finalUrl = `${baseUrl}&sub=${source}&sub2=${clickID}`;
+      window.location.href = finalUrl;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to offer...</p>
+</body>
+</html>
